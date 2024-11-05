@@ -1,6 +1,6 @@
 databaseType = "SqlServer"
-id = "10cb20b9-3040-417f-a01c-02c9875ca76c"
-name = "AdventureWorks"
+id = "ac1ca6d2-1f61-4a83-9de1-27d1a7a63977"
+name = "FlywayPOC"
 
 [flyway]
 defaultSchema = "dbo"
@@ -10,23 +10,22 @@ outOfOrder = true
 schemaModelLocation = "schema-model"
 validateMigrationNaming = true
 
-[flyway.check]
-majorTolerance = 0
+  [flyway.check]
+  majorTolerance = 0
 
 [flyway.plugins.clean]
 mode = "all"
 
 [flywayDesktop]
 developmentEnvironment = "development"
-enableMigrations = false
 schemaModel = "schema-model"
 shadowEnvironment = "shadow"
 
 [redgateCompare]
 filterFile = "filter.rgf"
 
-[redgateCompare.sqlserver]
-filterFile = "Filter.scpf"
+  [redgateCompare.sqlserver]
+  filterFile = "Filter.scpf"
 
 [redgateCompare.sqlserver.data.options.comparison]
 compressTemporaryFiles = false
@@ -78,17 +77,17 @@ writeAssembliesAsDlls = false
 ignoreAuthorizationOnSchemaObjects = false
 ignoreBindings = false
 ignoreChangeTracking = false
-ignoreCollations = false
+ignoreCollations = true
 ignoreComments = false
-ignoreDataCompression = false
+ignoreDataCompression = true
 ignoreDataSyncSchema = false
 ignoreDatabaseAndServerNameInSynonyms = true
 ignoreDmlTriggers = false
 ignoreDynamicDataMasking = false
 ignoreEventNotificationsOnQueues = false
 ignoreExtendedProperties = false
-ignoreFileGroupsPartitionSchemesAndPartitionFunctions = false
-ignoreFillFactorAndIndexPadding = false
+ignoreFileGroupsPartitionSchemesAndPartitionFunctions = true
+ignoreFillFactorAndIndexPadding = true
 ignoreFullTextIndexing = false
 ignoreIdentitySeedAndIncrementValues = false
 ignoreIndexes = false
@@ -96,24 +95,24 @@ ignoreInsteadOfTriggers = false
 ignoreInternallyUsedMicrosoftExtendedProperties = false
 ignoreLockPropertiesOfIndexes = false
 ignoreNocheckAndWithNocheck = false
-ignoreNotForReplication = false
+ignoreNotForReplication = true
 ignoreNullabilityOfColumns = false
 ignorePerformanceIndexes = false
 ignorePermissions = false
-ignoreReplicationTriggers = false
+ignoreReplicationTriggers = true
 ignoreSchemas = false
 ignoreSensitivityClassifications = false
 ignoreSetQuotedIdentifierAndSetAnsiNullsStatements = false
 ignoreSquareBracketsInObjectNames = false
-ignoreStatistics = false
+ignoreStatistics = true
 ignoreStatisticsIncremental = false
 ignoreStatisticsNoRecomputePropertyOnIndexes = false
 ignoreSynonymDependencies = false
 ignoreSystemNamedConstraintAndIndexNames = false
-ignoreTsqltFrameworkAndTests = false
+ignoreTsqltFrameworkAndTests = true
 ignoreUserProperties = true
-ignoreUsersPermissionsAndRoleMemberships = false
+ignoreUsersPermissionsAndRoleMemberships = true
 ignoreWhiteSpace = true
-ignoreWithElementOrder = false
+ignoreWithElementOrder = true
 ignoreWithEncryption = false
-ignoreWithNoCheck = false = false
+ignoreWithNoCheck = true
