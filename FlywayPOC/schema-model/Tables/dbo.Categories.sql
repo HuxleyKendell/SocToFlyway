@@ -5,7 +5,8 @@ CREATE TABLE [dbo].[Categories]
 [Description] [ntext] NULL,
 [Picture] [image] NULL,
 [date] [date] NULL,
-[MyNewCategory] [int] NULL
+[MyNewCategory] [int] NULL,
+[Test] [int] NULL
 )
 GO
 ALTER TABLE [dbo].[Categories] ADD CONSTRAINT [PK_Categories] PRIMARY KEY CLUSTERED ([CategoryID])
